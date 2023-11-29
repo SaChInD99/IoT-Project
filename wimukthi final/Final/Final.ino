@@ -170,7 +170,7 @@ void read_DHT11() {
 }
 
 void read_Sensors() {
-  ldr_Value = analogRead(ldr_Pin); // LDR
+  ldr_Value = analogRead(ldr_Pin); // LDR   Read value
   Serial.print(ldr_Value);
   if (ldr_Value < 20.0) {
     digitalWrite(lamp, LOW);
